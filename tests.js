@@ -137,6 +137,34 @@ describe("isVowel", function() {
     });
 });
 
+describe("add", function() {
+    it("add is a defined function", function() {
+        expect(typeof add).toBe("function");
+    });
+    it("add(2, 3) returns 5", function() {
+        expect(add(2, 3)).toBe(5);
+    });
+    it("add(-3, -9) returns -12", function() {
+        expect(add(-3, -9)).toBe(-12);
+    });
+    it('add("5", 6) returns 11', function() {
+        expect(add("5", 6)).toBe(11);
+    });
+    it('add("-4", "10") returns 6', function() {
+        expect(add("-4", "10")).toBe(6);
+    });
+    it('add("banana", "split") returns "please enter numbers."', function() {
+        expect(add("banana", "split")).toBe("please enter numbers.");
+    });
+    it('add(2, "apples") returns "please enter numbers.', function() {
+        expect(add(2, "apples")).toBe("please enter numbers.")
+    });
+    it('add() returns "please enter numbers.', function() {
+        expect(add()).toBe("please enter numbers.");
+    });
+
+})
+
 
 
 

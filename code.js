@@ -47,6 +47,18 @@ function isVowel(letter) {
     }
 }
 
+function add(num1, num2) {
+    num1 = Number(num1)
+    num2 = Number(num2)
+    console.log(num1)
+    if (isNaN(num1) || isNaN(num2)) {
+        return "please enter numbers.";
+    }
+    else {
+        return (num1 + num2);
+    }
+}
+
 
 
 
