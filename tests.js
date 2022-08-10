@@ -30,4 +30,25 @@ describe("sayHello", function() {
     it('sayHello("Pat"), returns "Hello, Pat!"', function() {
         expect(sayHello("Pat")).toBe("Hello, Pat!");
     });
+    it('sayHello(), returns "Hello, World!', function() {
+        expect(sayHello()).toBe("Hello, World!");
+    });
+    it('sayHello(true), returns "Hello, World!', function() {
+        expect(sayHello(true)).toBe("Hello, World!");
+    });
+    it('sayHello(false), returns "Hello, World!', function() {
+        expect(sayHello(false)).toBe("Hello, World!");
+    });
+    it('sayHello(null), returns "Hello, World!', function() {
+        expect(sayHello(null)).toBe("Hello, World!");
+    });
+    it('sayHello("") returns "Hello, World!', function() {
+        expect(sayHello("")).toBe("Hello, World!");
+    });
+    it('sayHello(5) returns "Please enter a non-numeric value."', function() {
+        expect(sayHello(5)).toBe("Please enter a non-numeric value.");
+    });
+    it('sayHello("5") returns "Please enter a non-numeric value."', function() {
+        expect(sayHello("5")).toBe("Please enter a non-numeric value.");
+    });
 })
