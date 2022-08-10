@@ -52,3 +52,18 @@ describe("sayHello", function() {
         expect(sayHello("5")).toBe("Please enter a non-numeric value.");
     });
 })
+
+describe("isFive", function() {
+    it('is a defined function', function() {
+        expect(typeof isFive).toBe("function");
+    });
+    it('should return a boolean regardless of input', function() {
+        expect(typeof isFive()).toBe("boolean");
+    });
+    it('isFive(5) should return true', function() {
+        expect(isFive(5)).toBe(true);
+    });
+    it('isFive("5") should return true', function() {
+        expect(isFive("5")).toBe(true);
+    });
+})
